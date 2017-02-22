@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>30天称重挑战</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="header" id="header">
+				<div class="people-num" id="people-num"></div>
+				<p class="date-one" id="date-one">第一期</p>
+				<p class="header-title">称重30天</p>
+				<p class="header-title">天天领<span>红包</span></p>
+				<p class="header-time time-out">距离活动开始</p>
+				<p class="time-out" id="time-out"></p>
+				<p class="header-img"><img src="images/head.png"></p>
+				<p class="momey">0.5<span>元</span></p>
+				<p class="momey-title">红包总额</p>
+			</div>
+			<div class="date-box">
+				<!-- <div class="title-list"></div> -->
+				<div class="calendar">
+					<div class="text">
+						<div class="text-left" >已称重<span id="text-alreadydays">0</span>天</div>
+						<div class="text-right" id="text-already" >今日未称重</div>
+					</div>
+					<div class="date" id="date">
+						<ul>
+							<li>日</li>
+							<li>一</li>
+							<li>二</li>
+							<li>三</li>
+							<li>四</li>
+							<li>五</li>
+							<li>六</li>
+						</ul>
+						<!-- <ul>
+							<li name="1127" class="text-color">27</li>
+							<li name="1128" class="text-color">28</li>
+							<li name="1129" class="text-color">29</li>
+							<li name="1130" class="text-color">30</li>
+							<li name="1201">1</li>
+							<li name="1202">2</li>
+							<li name="1203">3</li>
+						</ul> 
+						<ul>
+							<li name="1204"><span class="icon-momey"></span>4</li>
+							<li name="1205">5</li>
+							<li name="1206">6</li>
+							<li name="1207">7</li>
+							<li name="1208">8</li>
+							<li name="1209">9</li>
+							<li name="1210">10</li>
+						</ul>-->
+						<ul>
+							<li name="1211"><span class="icon-momey"></span>11</li>
+							<li name="1212">12</li>
+							<li name="1213">13</li>
+							<li name="1214">14</li>
+							<li name="1215">15</li>
+							<li name="1216">16</li>
+							<li name="1217">17</li>
+						</ul>
+						<ul>
+							<li name="1218"><span class="icon-momey"></span>18</li>
+							<li name="1219">19</li>
+							<li name="1220">20</li>
+							<li name="1221">21</li>
+							<li name="1222">22</li>
+							<li name="1223">23</li>
+							<li name="1224">24</li>
+						</ul>
+						<ul>
+							<li name="1225"><span class="icon-momey"></span>25</li>
+							<li name="1226">26</li>
+							<li name="1227">27</li>
+							<li name="1228">28</li>
+							<li name="1229">29</li>
+							<li name="1230">30</li>
+							<li name="1231">31</li>
+						</ul>
+						<ul>
+							<li name="0101"><span class="icon-momey"></span>1</li>
+							<li name="0102">2</li>
+							<li name="0103">3</li>
+							<li name="0104">4</li>
+							<li name="0105">5</li>
+							<li name="0106">6</li>
+							<li name="0107">7</li>
+						</ul>
+						<ul>
+							<li name="0108"><span class="icon-momey"></span>8</li>
+							<li name="0109">9</li>
+							<li name="0110">10</li>
+							<li name="0111">11</li>
+							<li name="0112">12</li>
+							<li name="0113">13</li>
+							<li name="0114">14</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="riddling-crates">
+					<div class="text">
+						<div class="text-left">连续签到可开启宝箱</div>
+						<div class="text-right" id="text-sign"><!-- 已连续签到<span>7</span>天 --></div>
+					</div>
+					<div class="rk-box">
+						<ul>
+							<li class="bg_light">
+								<div class="div-light dp_n"></div>
+								<p class="text-day"><span>7天</span></p>
+								<div class="span-money">1.99<span>元</span> </div>
+								<a  class="text-bag" id="text-bag-first">领取红包</a>
+							</li>
+							<li class="bg_light">
+								<div class="div-light dp_n"></div>
+								<p class="text-day"><span>14天</span></p>
+								<div class="span-money">1.99<span>元</span> </div>
+								<a  class="text-bag" id="text-bag-second">领取红包</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="bg_light">
+								<div class="div-light dp_n"></div>
+								<div class="light-default" id="light-default-21"><span>21天</span></div>
+								<div class="light-box dp_n" id="light-box-21">
+									<p class="text-day"><span>21天</span></p>
+									<a  class="text-bag" id="text-bag-third">领取优惠卷</a>
+								</div>
+							</li>
+							<li class="bg_light">
+								<div class="div-light dp_n"></div>
+								<div class="light-default" id="light-default-30"><span>30天</span></div>
+								<div class="light-box dp_n" id="light-box-30">
+									<p class="text-day"><span>30天</span></p>
+									<a  class="text-bag" id="text-bag-fourth">领取红包</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p class="tip">活动解释权归云麦所有，与手机生产商苹果公司无关</p>
+			</div>
+		</div>
+		<div class="my-redpacket dp_n">
+			<p class="text-rpmoney">0.5<span>元</span></p>
+			<p class="text-rpmoneytext">红包总额</p>
+			<p><img src="../images/head.png"></p>
+			<div class="text-CDkey">我的红包兑换码</div>
+			<p class="text-CDkeytext">超过 20 元才能生成兑换码哦，继续加油吧~</p>
+		</div>
+	</div>
+
+	<div class="redpacket-box dp_n" id="box">
+		<div class="content-box">
+			<div class="redpacket-before dp_n" id="redpacket-before">
+				<p>签到成功</p>
+				<a  class="btn-money" id="btn-money"></a>
+			</div>
+			<div class="redpacket dp_n" id="redpacket">
+				<p class="text-cgt" >恭喜您</p>
+				<p><img src="images/head.png"></p>
+				<!-- <p class="text text-explain" >一键兑换后<br/>您的红包总额将 清零</p>	 -->
+				<!-- <p class="text text-explain">获得红包</p> -->
+				<!-- <p class="text text-explain">您今日有一个 红包 待领取<br/>
+					使用好轻称重<br/>
+					或手动添加体重后可领取</p> -->
+				<!-- <div class="text text-Coupon">
+					<span>获得一张 20 元优惠券</span>
+					<span>券码：232y7264723 <a >复制卷码</a></span>
+				</div> -->
+				<!-- <p class="text text-use">可用: 好轻, 好轻Color, 瑜伽垫</p> -->
+				<!-- <p class="text-money">1.66<span> 元</span></p> -->
+				<!-- <p class="text text-btnExplain">再签到五天可获得双倍红包</p> -->
+				<!-- <a  class="btn-exchange">好好，立即兑换</a> -->
+				<!-- <a  class="btn-think">算了，再想想</a> -->
+				<!-- <a  class="btn-look">查看我的红包</a> -->
+				<!-- <a  class="btn-go">马上去称重</a> -->
+				<!-- <a  class="btn-use">太好啦，现在就用</a> -->
+				<!-- <a  class="btn-put">先放到 我的红包</a> -->
+			</div>	
+			<a  class="close" id="btn_close"></a>
+		</div>
+	</div>
+	<!-- 称重未满7天,不能领取 -->
+	<div class="text-continuous dp_n" id="text-continuous"><!-- 连续称重7天才能领取，继续加油吧！ --></div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/common.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
+
